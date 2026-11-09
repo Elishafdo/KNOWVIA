@@ -719,7 +719,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                   setSaveStatus("unsaved");
                 }
               }}
-              className="min-h-[420px] p-6 text-[1.125rem] sm:text-[1.2rem] md:text-[1.26rem] leading-[1.95] text-zinc-900 dark:text-zinc-100 bg-white dark:bg-zinc-900 focus:outline-none article-body-charter"
+              className="min-h-[420px] p-6 text-[1.15rem] leading-[1.85] text-zinc-900 dark:text-zinc-100 bg-white dark:bg-zinc-900 focus:outline-none article-body-charter"
               style={{ minHeight: "420px" }}
             />
           </div>

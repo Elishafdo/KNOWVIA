@@ -147,15 +147,6 @@ export default async function Footer() {
                 </a>
               )}
             </div>
-
-            <div className="mt-6 border-t border-zinc-200/80 pt-4 dark:border-zinc-800">
-              <Link
-                href="/admin"
-                className="text-xs text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
-              >
-                Editorial CMS Login
-              </Link>
-            </div>
           </div>
         </div>
 

@@ -203,7 +203,7 @@ function ArticlesTableContent() {
                 setCurrentPage(1);
               }}
               placeholder="Search articles by title or keyword..."
-              className="w-full rounded-xl border border-zinc-200 bg-zinc-50 pl-10 pr-4 py-2 text-xs sm:text-sm text-zinc-900 focus:border-sky-500 focus:bg-white focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+              className="w-full rounded-xl border border-zinc-300 bg-white pl-10 pr-4 py-2 text-xs sm:text-sm text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white"
             />
           </div>
 
@@ -215,7 +215,7 @@ function ArticlesTableContent() {
                 setCurrentPage(1);
               }}
               aria-label="Filter by category"
-              className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3 py-2 text-xs sm:text-sm text-zinc-700 focus:border-sky-500 focus:bg-white focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+              className="w-full rounded-xl border border-zinc-300 bg-white px-3 py-2 text-xs sm:text-sm text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white"
             >
               <option value="ALL">All Categories</option>
               {categories.map((c) => (

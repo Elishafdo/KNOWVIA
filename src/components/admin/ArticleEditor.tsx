@@ -504,7 +504,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                 value={title}
                 onChange={(e) => handleTitleChange(e.target.value)}
                 placeholder="Enter an evocative, intelligent title..."
-                className="w-full rounded-xl border border-zinc-200 bg-zinc-50/50 px-4 py-3 text-lg font-serif font-bold text-zinc-900 focus:border-sky-500 focus:bg-white focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                className="w-full rounded-xl border border-zinc-300 bg-white px-4 py-3 text-lg font-serif font-bold text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white"
               />
             </div>
 
@@ -520,7 +520,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                   setSaveStatus("unsaved");
                 }}
                 placeholder="Short subtitle or executive summary introducing the article..."
-                className="w-full rounded-xl border border-zinc-200 bg-zinc-50/50 px-4 py-2.5 text-sm text-zinc-900 focus:border-sky-500 focus:bg-white focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white leading-relaxed"
+                className="w-full rounded-xl border border-zinc-300 bg-white px-4 py-2.5 text-sm text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white leading-relaxed"
               />
             </div>
           </div>
@@ -719,7 +719,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                   setSaveStatus("unsaved");
                 }
               }}
-              className="min-h-[420px] p-6 text-base leading-relaxed text-zinc-900 dark:text-zinc-100 focus:outline-none font-sans"
+              className="min-h-[420px] p-6 text-base leading-relaxed text-zinc-900 dark:text-zinc-100 bg-white dark:bg-zinc-900 focus:outline-none article-body-charter"
               style={{ minHeight: "420px" }}
             />
           </div>
@@ -774,7 +774,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                   }
                 }}
                 placeholder="Enter a key takeaway and press Add..."
-                className="flex-1 rounded-xl border border-zinc-200 bg-zinc-50/50 px-4 py-2 text-xs sm:text-sm text-zinc-900 focus:border-sky-500 focus:bg-white focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                className="flex-1 rounded-xl border border-zinc-300 bg-white px-4 py-2 text-xs sm:text-sm text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white"
               />
               <button
                 type="button"
@@ -806,7 +806,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                   setSaveStatus("unsaved");
                 }}
                 aria-label="Publication Status"
-                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3 py-2 text-xs sm:text-sm text-zinc-900 focus:border-sky-500 focus:bg-white focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                className="w-full rounded-xl border border-zinc-300 bg-white px-3 py-2 text-xs sm:text-sm text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white"
               >
                 <option value="DRAFT">Draft (Unpublished)</option>
                 <option value="PUBLISHED">Published (Live)</option>
@@ -826,7 +826,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                     setScheduledAt(e.target.value);
                     setSaveStatus("unsaved");
                   }}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3 py-2 text-xs text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                  className="w-full rounded-xl border border-zinc-300 bg-white px-3 py-2 text-xs text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white"
                 />
                 <p className="text-[11px] text-zinc-400">
                   Article will automatically go live when this time arrives.
@@ -883,7 +883,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                 setSaveStatus("unsaved");
               }}
               aria-label="Select Category"
-              className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3 py-2 text-xs sm:text-sm text-zinc-900 focus:border-sky-500 focus:bg-white focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+              className="w-full rounded-xl border border-zinc-300 bg-white px-3 py-2 text-xs sm:text-sm text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white"
             >
               <option value="" disabled>
                 Select Category ▼
@@ -946,7 +946,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                       setSaveStatus("unsaved");
                     }}
                     placeholder="Describe image for screen readers"
-                    className="w-full rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-800 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                    className="w-full rounded-lg border border-zinc-300 bg-white px-3 py-1.5 text-xs text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white"
                   />
                 </div>
 
@@ -962,7 +962,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                       setSaveStatus("unsaved");
                     }}
                     placeholder="Caption displayed below image"
-                    className="w-full rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-800 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                    className="w-full rounded-lg border border-zinc-300 bg-white px-3 py-1.5 text-xs text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white"
                   />
                 </div>
               </div>
@@ -1044,7 +1044,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                   }
                 }}
                 placeholder="Add tags (e.g. AI, Physics)..."
-                className="flex-1 rounded-xl border border-zinc-200 bg-zinc-50 px-3 py-2 text-xs text-zinc-900 focus:border-sky-500 focus:bg-white focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                className="flex-1 rounded-xl border border-zinc-300 bg-white px-3 py-2 text-xs text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white"
               />
               <button
                 type="button"
@@ -1074,7 +1074,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                   setIsSlugManuallyEdited(true);
                   setSaveStatus("unsaved");
                 }}
-                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3 py-2 text-xs font-mono text-zinc-800 focus:border-sky-500 focus:bg-white focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                className="w-full rounded-xl border border-zinc-300 bg-white px-3 py-2 text-xs font-mono text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white"
               />
               <p className="mt-1 text-[10px] text-zinc-400">
                 /articles/{slug || "slug-preview"}
@@ -1093,7 +1093,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                   setSaveStatus("unsaved");
                 }}
                 placeholder="Search engine title..."
-                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3 py-2 text-xs text-zinc-800 focus:border-sky-500 focus:bg-white focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                className="w-full rounded-xl border border-zinc-300 bg-white px-3 py-2 text-xs text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white"
               />
             </div>
 
@@ -1114,7 +1114,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                   setSaveStatus("unsaved");
                 }}
                 placeholder="Summary for search results (recommended under 160 characters)..."
-                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3 py-2 text-xs text-zinc-800 focus:border-sky-500 focus:bg-white focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white leading-relaxed"
+                className="w-full rounded-xl border border-zinc-300 bg-white px-3 py-2 text-xs text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white leading-relaxed"
               />
             </div>
 
@@ -1253,7 +1253,7 @@ export default function ArticleEditor({ initialArticle, isNew = false }: Article
                 value={mediaSearch}
                 onChange={(e) => setMediaSearch(e.target.value)}
                 placeholder="Search media by filename or alt text..."
-                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3 py-2 text-xs text-zinc-800 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                className="w-full rounded-xl border border-zinc-300 bg-white px-3 py-2 text-xs text-zinc-900 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:focus:bg-zinc-800 dark:focus:text-white"
               />
             </div>
 

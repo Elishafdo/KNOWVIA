@@ -30,15 +30,49 @@ body {
 .knowvia-article-prose,
 .knowvia-article-prose p,
 .knowvia-article-prose li,
-.knowvia-article-prose blockquote {
+.knowvia-article-prose blockquote,
+.knowvia-article-prose span,
+.knowvia-article-prose div {
   font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", Times, serif;
 }
 
-/* Same consistent, slightly bigger size for all article body text */
+/* Reset any arbitrary pasted inline font-size on children inside paragraphs or list items */
+.knowvia-article-prose p *,
+.knowvia-article-prose li * {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+/* Same consistent, comfortable, readable size for all article body text */
 .knowvia-article-prose p,
 .knowvia-article-prose li {
-  font-size: 1.15rem;
-  line-height: 1.85;
+  font-size: 1.15rem !important;
+  line-height: 1.85 !important;
+}
+
+/* Harmonious heading hierarchy inside articles */
+.knowvia-article-prose h1 {
+  font-size: 1.875rem !important;
+  line-height: 1.3 !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  font-weight: 700 !important;
+}
+
+.knowvia-article-prose h2 {
+  font-size: 1.625rem !important;
+  line-height: 1.35 !important;
+  margin-top: 2rem !important;
+  margin-bottom: 0.85rem !important;
+  font-weight: 700 !important;
+}
+
+.knowvia-article-prose h3 {
+  font-size: 1.375rem !important;
+  line-height: 1.4 !important;
+  margin-top: 1.75rem !important;
+  margin-bottom: 0.75rem !important;
+  font-weight: 700 !important;
 }
 
 /* Prevent autofill styling from breaking input text visibility */

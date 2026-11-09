@@ -44,6 +44,27 @@ body {
   }
 }
 
+/* Article content typography scale and enhanced readability */
+.knowvia-article-prose p {
+  font-size: 1.125rem;
+  line-height: 1.85;
+}
+
+@media (min-width: 640px) {
+  .knowvia-article-prose p {
+    font-size: 1.2rem;
+    line-height: 1.92;
+  }
+}
+
+@media (min-width: 768px) {
+  .knowvia-article-prose p {
+    font-size: 1.28rem;
+    line-height: 2.0;
+    letter-spacing: -0.003em;
+  }
+}
+
 /* Prevent autofill styling from breaking input text visibility */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
